@@ -1,0 +1,21 @@
+<div  class="container">
+  <h1>
+    This is  About us page
+  </h1>
+   <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>ACTION</th>
+    </tr>
+
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.id}}</td>
+      <td>{{employee.name}}</td>
+      <td>{{employee.email}}</td>
+      <td><button type="button" class="btn btn-danger" style="color: black;">DELETE</button></td>
+    </tr>
+   </table>
+
+  </div>
